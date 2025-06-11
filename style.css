@@ -213,9 +213,8 @@ body {
 }
 .details__cards {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 80px;
 }
 .details__cards:nth-child(2) {
     flex-direction: row-reverse;
@@ -334,8 +333,5 @@ body {
     .footer__info {
         gap: 50px;
         flex-direction: column;
-    }
-    .details__img {
-        width: 70%;
     }
 }
