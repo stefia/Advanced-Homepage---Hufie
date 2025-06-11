@@ -279,11 +279,7 @@ body {
     text-decoration: none;
 }
 
-@media (min-width: 1025px) {
-    .process__benefits-card {
-        flex: 0 0 25%;
-    }
-}
+
 @media (max-width: 1279px) {
     .process__benefits {
         justify-content: center;
