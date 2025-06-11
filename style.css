@@ -180,13 +180,14 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    gap: 32px;
     flex: 0 0 25%;
+    gap: 32px;
+    max-width: 200px;
+
 }
 .process__card-content {
-    width: 100%;           
-    max-width: 570px;    
+    text-align: center;   
+    width: 100%;            
     margin: 0 auto;       
 }
 .process__card-title {
@@ -283,6 +284,7 @@ body {
 }
 @media (min-width: 641px) and (max-width: 1279px) {
     .process__benefits-card {
+        max-width: 400px;
         flex: 0 0 50%;
     }
     .section__process {
@@ -318,10 +320,8 @@ body {
         background-color: var(--bg-blue-dark);
     }
     .process__benefits-card {
+        max-width: 570px;
         flex: 0 0 100%;
-    }
-    .process__card-content {          
-        max-width: 350px;          
     }
     .details__card {
         max-width: none;
@@ -332,5 +332,8 @@ body {
     .footer__info {
         gap: 50px;
         flex-direction: column;
+    }
+    .details__img {
+        width: 70%;
     }
 }
