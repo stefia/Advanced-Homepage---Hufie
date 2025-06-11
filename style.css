@@ -22,6 +22,7 @@ body {
     --fc-blue: #6281F7;
     --fc-green: #5DB082;
     --fc-gray: #70767e;
+    --fc-blue-bright: #263FA9;
     --btn-bg-green: #295E48;
     --btn-bg-white: #F6F7FB;
     --bg-white: #F6F7FB;
@@ -31,12 +32,13 @@ body {
     --bg-yellow: #F5C044;
     --bg-green: #5DB082;
     --bg-violet: #6D4AE5;
-    --bg-violet-light: #9caeff6e;
+    --bg-violet-light: #aac2ff4d;
 }
 
 .text--blue { color: var(--fc-blue); }
 .text--gray { color: var(--fc-gray); }
 .text--white { color: var(--fc-white); }
+.text--blue-bright {color: var(--fc-blue-bright); }
 .bg--blue {background-color: var(--bg-blue); }
 .bg--yellow {background-color: var(--bg-yellow); } 
 .bg--green {background-color: var(--bg-green); }
@@ -64,6 +66,7 @@ body {
 }
 .text--body-sm {
     font-size: var(--fs-xxs);
+    font-weight: 500;
 }
 
 .btn--white,
@@ -158,7 +161,6 @@ body {
     padding-block: clamp(48px, 7.5vw, 96px);
 }
 .process__info {
-    max-width: 550px;
     text-align: center;
     margin: 0 auto;
 }
@@ -285,6 +287,9 @@ body {
         background: url("resources/section_bg_2.png") no-repeat top/100%;
         background-color: var(--bg-blue-dark);
     }
+    .footer__links-item {
+        flex: 0 0 100%;
+    }
 }
 
 @media (max-width: 1023px) {
@@ -317,13 +322,11 @@ body {
     .details__card {
         max-width: none;
     }
-    .footer__links-item {
-        flex: 0 0 100%;
-    }
     .footer__links {
         column-count: 1;     
     }
     .footer__info {
         gap: 50px;
+        flex-direction: column;
     }
 }
