@@ -221,7 +221,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    max-width: 530px;
 }
 .details__card-visuon {
     display: flex;
@@ -254,7 +253,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: clamp(100px, 39vw, 200px);
+    gap: 200px;
     margin-bottom: 36px;
 }
 .footer__links {
@@ -288,6 +287,8 @@ body {
     .section__process {
         background: url("resources/section_bg_2.png") no-repeat top/100%;
         background-color: var(--bg-blue-dark);
+    } .footer__info {
+        gap: 100px;
     }
     .footer__links-item {
         flex: 0 0 100%;
@@ -295,6 +296,9 @@ body {
 }
 
 @media (max-width: 1023px) {
+    .promo__info-title {
+        font-size: 2.5rem;
+    }
     .promo__img {
         display: none; 
     }
@@ -308,9 +312,6 @@ body {
 }
 
 @media (max-width: 640px) {
-    .promo__info-title {
-        font-size: 1.8rem;
-    }
     .section__process {
         background: url("resources/section_bg_2.png") no-repeat center/200%;
         background-color: var(--bg-blue-dark);
