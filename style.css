@@ -10,6 +10,8 @@ body {
     background-color: var(--bg-white);
 }
 
+html { font-size: 16px; }
+
 :root {
     --fs-xl: 4rem;
     --fs-lg: 2.25rem;
@@ -91,7 +93,7 @@ body {
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
-    padding-inline: clamp(30px, 5%, 64px);
+    padding-inline: clamp(30px, 5%, 68px);
 }
 
 .header,
@@ -163,6 +165,7 @@ body {
 .process__info {
     text-align: center;
     margin: 0 auto;
+    max-width: 550px;
 }
 .process__info-text {
     margin: 16px 0 72px;
@@ -280,6 +283,7 @@ body {
     }
 }
 @media (min-width: 641px) and (max-width: 1279px) {
+    html { font-size: 15px; }
     .process__benefits-card {
         flex: 0 0 50%;
     }
@@ -306,9 +310,7 @@ body {
 }
 
 @media (max-width: 640px) {
-    .promo__info-title {
-        font-size: var(--fs-lg);
-    }
+    html { font-size: 14px; }
     .section__process {
         background: url("resources/section_bg_2.png") no-repeat center/200%;
         background-color: var(--bg-blue-dark);
