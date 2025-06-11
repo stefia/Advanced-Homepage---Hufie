@@ -123,8 +123,14 @@ body {
 .promo {
     max-width: 530px;
 }
-.promo__version {
+
+.promo__version,
+.promo__version-circle,
+.promo__info-buttons {
     display: flex;
+}
+
+.promo__version {
     align-items: center;
     gap: 20px;
     background-color: var(--bg-violet-light);
@@ -136,7 +142,6 @@ body {
 .promo__version-circle {
     width: 30px;
     height: 30px;
-    display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px;
@@ -151,7 +156,6 @@ body {
     margin-bottom: clamp(41px, 6.4vw, 82px);
 }
 .promo__info-buttons {
-    display: flex;
     gap: 36px;
 }
 
@@ -170,21 +174,23 @@ body {
 .process__info-text {
     margin: 16px 0 72px;
 }
-.process__benefits {
+.process__benefits,
+.process__benefits-card,
+.process__card-visuon {
     display: flex;
+}
+.process__benefits {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
 }
 .process__benefits-card {
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     flex: 0 0 25%;
     gap: 32px;
     max-width: 195px;
-
 }
 .process__card-content {
     text-align: center;   
@@ -195,7 +201,6 @@ body {
     margin-bottom: 32px;
 }
 .process__card-visuon {
-    display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 15px;
@@ -206,13 +211,19 @@ body {
 .section__details {
     margin-block: clamp(48px, 7.5vw, 96px);
 }
-.details {
+.details,
+.details__cards,
+.details__card,
+.details__card-visuon,
+.details__card-points,
+.details__item {
     display: flex;
+}
+.details { 
     flex-direction: column;
     gap: 72px;
 }
 .details__cards {
-    display: flex;
     justify-content: space-around;
     align-items: center;
 }
@@ -220,13 +231,11 @@ body {
     flex-direction: row-reverse;
 }
 .details__card {
-    display: flex;
     flex-direction: column;
     gap: 24px;
     max-width: 570px;
 }
 .details__card-visuon {
-    display: flex;
     align-items: center;
     justify-content: center;
     height: 48px;
@@ -234,13 +243,11 @@ body {
     border-radius: 50%;
 }
 .details__card-points {
-    display: flex;
     flex-direction: column;
     gap: 12px;
     list-style: none;
 }
 .details__item {
-    display: flex;
     align-items: center;
     gap: 10px;
 }
