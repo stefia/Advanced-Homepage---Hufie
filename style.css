@@ -10,8 +10,6 @@ body {
     background-color: var(--bg-white);
 }
 
-html { font-size: 16px; }
-
 :root {
     --fs-xl: 4rem;
     --fs-lg: 2.25rem;
@@ -40,6 +38,7 @@ html { font-size: 16px; }
 .text--blue { color: var(--fc-blue); }
 .text--gray { color: var(--fc-gray); }
 .text--white { color: var(--fc-white); }
+.text--green { color: var(--fc-green);}
 .text--blue-bright {color: var(--fc-blue-bright); }
 .bg--blue {background-color: var(--bg-blue); }
 .bg--yellow {background-color: var(--bg-yellow); } 
@@ -283,7 +282,6 @@ html { font-size: 16px; }
     }
 }
 @media (min-width: 641px) and (max-width: 1279px) {
-    html { font-size: 15px; }
     .process__benefits-card {
         flex: 0 0 50%;
     }
@@ -310,7 +308,9 @@ html { font-size: 16px; }
 }
 
 @media (max-width: 640px) {
-    html { font-size: 14px; }
+    .promo__info-title {
+        font-size: 1.8rem;
+    }
     .section__process {
         background: url("resources/section_bg_2.png") no-repeat center/200%;
         background-color: var(--bg-blue-dark);
