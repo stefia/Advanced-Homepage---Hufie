@@ -213,6 +213,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    gap: 80px;
 }
 .details__cards:nth-child(2) {
     flex-direction: row-reverse;
